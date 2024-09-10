@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pessoal</title>
+</head>
+<body>
+    <header>
+        <h1 id="topo">Formulário pessoal</h1>
+    </header>
+    <main>
+        <form action="envia" method="post" name="form1">
+            <fieldset>
+                <legend>Preencha abaixo com seus dados pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required="required" placeholder="Digite seu nome" size="40"> <br>
+                <label for="data_de_nascimento">Data de nascimento:</label>
+                <input type="date" id="data_de_nascimento" name="data_de_nascimento" id="data_de_nascimento" required="required" placeholder="00/00/0000"> <br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required="required" placeholder="Digite seu endereço" size="40"> <br>
+                <label for="nro">Nro:</label>
+                <input type="text " id="nro" name="nro" required="required" placeholder="Nro da residência"> <br>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required="required" placeholder="Digite sua cidade"> <br>
+                <label for="estado">Selecione seu estado:</label>
+                <select name="estado" id="estado" required="required">
+                    <option value="" disabled selected>Estados</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espiríto Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select> <br>
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo" required="required">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select> <br>
+                <label for="bens_pessoais">Bens pessoais:
+                    <input type="checkbox" id="casa" name="casa" value="casa">
+                    Casa <br>
+                    <input type="checkbox" id="carro" name="carro" value="carro">
+                    Carro <br>
+                    <input type="checkbox" id="moto" name="moto" value="moto">
+                    Moto   
+                </label> <br>
+                <label for="sobre">Digite um pouco sobre você:</label>
+                <input type="text" id="sobre" name="sobre" placeholder="Digite aqui sobre você e suas experiências" size="40" re quired="required"> <br>
+                <input type="submit" name="envia" value="Enviar">
+                <input type="reset" name="reset" value="Limpar">
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
